@@ -1,0 +1,46 @@
+{
+  "taskList": [
+    {
+      "title":"Совещание",
+      "date":"2018-10-06T07:30:10.759Z",
+      "place":"Холл",
+      "comment":"",
+      "produkt":"jetBr",
+      "isComing":false
+    },
+
+    {
+      "title":"Обсуждение",
+      "date":"2018-11-07T07:00:11.759Z",
+      "time":"11-30",
+      "place":"к. 0207",
+      "comment":"",
+      "produkt":"Sberseason",
+      "isComing":false
+    },
+    {
+      "title":"Планерка",
+      "date":"2019-1-06T00:30:12.759Z",
+      "place":"к. 0301",
+      "comment":"",
+      "produkt":"seberbank",
+      "isComing":false
+    },
+    {
+      "title":"Конференция",
+      "date":"2018-10-05T07:30:13.759Z",
+      "place":"Холл",
+      "comment":"",
+      "produkt":"google",
+      "isComing":false
+    },
+    {
+      "title":"Конференция",
+      "date":"2018-9-05T07:00:13.759Z",
+      "place":"к. 516",
+      "comment":"",
+      "produkt":"MS",
+      "isComing":false
+    }
+    ]
+}

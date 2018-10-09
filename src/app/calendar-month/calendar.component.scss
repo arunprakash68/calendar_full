@@ -1,0 +1,83 @@
+$width: 15%;
+$back-color: #67685f;
+$color: #dddddd;
+.calendar_table {
+  z-index: 40;
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 15%;
+  left: 3%;
+  div {
+    //border: 1px solid red;
+  }
+}
+
+.month {
+  display: grid;
+  grid-template-columns: repeat(7, 100%);
+  width: $width;
+  height: 30px;
+  text-align: center;
+
+}
+
+.month:hover {
+  div {
+    background-color: #d7d7d7;
+  }
+  div:hover {
+    background-color: $back-color;
+    color: $color;
+    border-radius: 5%;
+  }
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 100%);
+  width: $width;
+  height: 80%;
+  div {
+    border: 1px solid #dddddd;
+    margin: 1px 1px 1px 1px;
+    p {
+      width: 10px;
+      height: 10px;
+      margin-left: 40%;
+    }
+    ul {
+      width: 90%;
+      height: 70%;
+      list-style-type: none;
+      margin: 10% 0 0 4%;
+      color: #dddddd;
+      li {
+        margin-top: 2px;
+        font-size: 12px;
+        z-index: 10;
+        width: 7px;
+        height: 7px;
+        background-color: #73071a;
+        border-radius: 100%;
+
+      }
+    }
+
+  }
+  div:hover {
+    border-radius: 5%;
+    background-color: $back-color;
+    color: $color;
+  }
+
+}
+
+#tday {
+  color: #73071a;
+  text-align: center;
+  width: 20%;
+  height: 30%;
+  background: #767676;
+  border-radius: 100%;
+}

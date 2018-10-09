@@ -1,0 +1,46 @@
+<div class="calendar">
+  <div class="header">
+    <div>
+      <a (click)="decr_mnt()">Назад</a>
+      <a id="today" (click)="create_calendar(now)">Сегодня</a>
+      <a (click)="incr_mnt()">Далее</a>
+    </div>
+    <p>{{Months[mnt.getMonth()]+' '+mnt.getFullYear()}}</p>
+
+    <div>
+      <a id="month" routerLink="/month" (click)="create_calendar(now)">Месяц</a>
+      <a id="week" routerLink="/week">Неделя</a>
+      <a id="day" routerLink="/day">День</a>
+      <a id="year" routerLink="/year">Год</a>
+    </div>
+
+  </div>
+
+  <div class="calendar_table">
+    <div class="month">
+      <div>Понедельник</div>
+      <div>Вторник</div>
+      <div>Среда</div>
+      <div>Четверг</div>
+      <div>Пятница</div>
+      <div>Суббота</div>
+      <div>Воскресенье</div>
+    </div>
+    <div class="days">
+      <div *ngFor=" let day of days; let i = index" (click)="show_info(day)">
+        <p *ngIf="day!==now.getDate() || mnt.getMonth()!== now.getMonth() || mnt.getFullYear()!==now.getFullYear() ">
+          {{day}}</p>
+        <p id="tday"
+           *ngIf="day===now.getDate() && mnt.getMonth()=== now.getMonth() && mnt.getFullYear()===now.getFullYear()">
+          {{day}}</p>
+        <ul *ngIf="aufgabe[i] ">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <app-month-task [day]="Day" [isHid]="hid"></app-month-task>
+  <!--<app-month-task ></app-month-task>-->
+</div>
+
+

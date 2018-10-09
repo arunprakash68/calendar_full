@@ -1,0 +1,24 @@
+<div class="calendar">
+  <div class="header">
+    <div>
+      <a (click)="decr_mnt()">Назад</a>
+      <a id="today" (click)="create_calendar(date)">Сегодня</a>
+      <a (click)="incr_mnt()">Далее</a>
+    </div>
+    <p>{{d.getFullYear()}}</p>
+
+    <div>
+      <a id="month" routerLink="/month">Месяц</a>
+      <a id="week" routerLink="/week">Неделя</a>
+      <a id="day" routerLink="/day">День</a>
+      <a id="year" routerLink="/year">Год</a>
+    </div>
+
+  </div>
+
+  <div class="bl_year">
+    <div class="year" *ngFor="let month of Months">
+      <div><span>{{month + ' - ' + 5}}</span></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="calendar">
+  <div class="header">
+    <div>
+      <a (click)="decr_mnt()">Назад</a>
+      <a id="today" (click)="create_calendar()">Сегодня</a>
+      <a (click)="incr_mnt()">Далее</a>
+    </div>
+    <p>{{Months[d.getMonth()]+' '+d.getFullYear()}}</p>
+
+    <div>
+      <a id="month" routerLink="/month">Месяц</a>
+      <a id="week" routerLink="/week">Неделя</a>
+      <a id="day" routerLink="/day" (click)="create_calendar()">День</a>
+      <a id="year" routerLink="/year">Год</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="date">
+  <p id="tday"
+     *ngIf="d.getDate()===now.getDate() && d.getMonth()=== now.getMonth() && d.getFullYear()===now.getFullYear() ">
+    {{d.getDate() + ' ' + Months[d.getMonth()]}}</p>
+  <p *ngIf="d.getDate()!==now.getDate() || d.getMonth() !== now.getMonth() || d.getFullYear()!==now.getFullYear()">
+    {{d.getDate() + ' ' + Months[d.getMonth()]}}</p>
+</div>
+<div class="bl_days">
+  <div class="days" *ngFor="let day of days">
+    <div>{{day}}</div>
+  </div>
+</div>
+

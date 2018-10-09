@@ -1,0 +1,47 @@
+
+.days {
+  position: relative;
+  margin: 1px;
+  border: 1px solid #b3b3b3;
+  border-radius: 3%;
+}
+
+.days:hover {
+  background: #bababa;
+}
+
+.bl_days {
+  text-align: center;
+
+  overflow: scroll;
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(48, 10%);
+  grid-template-columns: 20% 80%;
+  width: 60%;
+  height: 70%;
+  margin: 10%;
+
+}
+
+.date {
+  position: absolute;
+  text-align: center;
+  width: 60%;
+  height: 30px;
+  margin: 5% 0 0 10%;
+  background: linear-gradient(45deg, #c9c9c9, #bcbdb4);
+  border-radius: 5px;
+}
+
+.date:hover {
+  background: linear-gradient(45deg, #bcbdb4, #c9c9c9);
+}
+
+#tday {
+  color: #73071a;
+  margin-left: 40%;
+  width: 20%;
+
+  border-radius: 100%;
+}

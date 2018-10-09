@@ -1,0 +1,42 @@
+$back-color: #67685f;
+$color: #dddddd;
+.form_rd {
+  visibility: visible;
+  z-index: 100;
+  width: 700px;
+  height: 400px;
+  background: $back-color;
+  color: $color;
+  margin: 9% 0 0 4%;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5%;
+  opacity: 0.9;
+  textarea {
+    margin-top: 10%;
+    width: 40%;
+    height: 50%;
+  }
+  p {
+    margin: 5% 0 0 5%;
+  }
+  button {
+    width: 30%;
+    height: 15%;
+
+  }
+}
+
+.task_info {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 10% 10% 10%;
+
+}
+
+#x {
+  width: 5%;
+  height: 5%;
+  right: 0;
+  top: 0;
+}

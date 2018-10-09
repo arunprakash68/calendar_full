@@ -1,0 +1,27 @@
+.bl_year {
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  margin: 10%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+
+}
+
+.year {
+  margin: 3px;
+  border: 1px solid #d7d7d7;
+  span {
+    display: block;
+    margin: 5% 0 0 10%;
+  }
+}
+
+.year:hover {
+  color: #404040;
+}
+
+p {
+  color: #73071a;
+  margin: 5% 0 -5% 25%;
+}

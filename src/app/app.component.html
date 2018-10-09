@@ -1,0 +1,18 @@
+<div class="calendar">
+  <div class="header">
+    <div>
+      <a>Назад</a>
+      <a id="today">Сегодня</a>
+      <a>Далее</a>
+    </div>
+    <p></p>
+    <div>
+      <a id="month" routerLink="/month" (click)="create_calendar(now)">Месяц</a>
+      <a id="week" routerLink="/week">Неделя</a>
+      <a id="day" routerLink="/day">День</a>
+      <a id="year" routerLink="/year">Год</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
